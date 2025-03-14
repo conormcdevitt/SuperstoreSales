@@ -1,13 +1,16 @@
-# Project XYZ
+# Superstore Performance Insights
 
-**Project XYZ** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
+**Superstore Performance Insights** is a data analysis tool used to uncover key insights into sales, profitability, discount impact and shipping effiency. The project goal is to provide data-driven recommendations to optimise business strategies.
 
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 
 ## Dataset Content
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size of 100Gb.
-
+* Source: This was a public dataset I found on Kaggle (https://www.kaggle.com/datasets/vivek468/superstore-dataset-final/data)
+* Key fields used: * Order Date, Ship Date for time based analysis.
+                   * Sales, Profit and Discount to assess financial performance.
+                   * Category and Sub-Category to assess performance of different product types.
+                   * Ship mode, Region and State to monitor shipping effiency and geographical trends.
 
 ## Business Requirements
 * Describe your business requirements
@@ -15,13 +18,16 @@
 
 ## Hypothesis and how to validate?
 1. "Higher discounts impact profitability negatively."
-    In order to validate this hypothesis, I will be make scatter plots and box plots using the Discount and Profit columns to show this trend visually and I will also use statistical tests to confirm it mathematically.
+    In order to validate this hypothesis, I will be making scatter plots and box plots using the Discount and Profit columns to show this trend visually and I will also use statistical tests to confirm it mathematically.
+    This hypothesis was confirmed when a significant negative correlation between discount levels and profit were found.
    
 2. "Certain product categories are more profitable than others."
    For this hypothesis, I will use a bar chart to show profit by category and a boxplot to show profit distribution by category and then also use statistical tests to confirm this.
+   This hypothesis was confirmed by showing that some categories tend to lead to higher profits, while others resulted in losses.
 
 3. "Shipping mode and region affect delivery time."
    In this case, I will use boxplots for the distribution of delivery days with each shipping method and a heatmap to show the average delivery time by region, again, statistical tests will be use to confirm.
+   This was partially confirmed by showing that shopping mode significantly impacts delivery time, although shipping region has minimal impact. Later in the interactive dashboard it could be seen that delivery time was significantly different, visually at least, when comparing states rather than just the regions themselves however.
 
 4. "Larger orders (higher quantities) lead to higher total profits."
    For the final hypothesis, I will use a scatter plot showing profit vs quantity and a regression line chart to showcase the predictive relationship between quantity and profit. Statistical tests will be used to prove this.
